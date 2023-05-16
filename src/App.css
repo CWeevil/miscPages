@@ -28,6 +28,55 @@
   color: #61dafb;
 }
 
+.full-sheet {
+  display: flex;
+}
+
+.stat-bar {
+  flex: auto;
+  display: flex;
+  max-width: 60%;
+  padding-top: 3px;
+}
+
+.inventory {
+  flex: auto;
+  max-width: 40%;
+  padding-top: 3px;
+}
+
+.record-box {
+  flex: auto;
+}
+
+.static-value {
+  outline: 1px solid black;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.label {
+  font-weight: bold;
+  padding: 4px;
+}
+
+.adjuster {
+  display: block;
+}
+
+.inventory {
+  display: block;
+  text-align: left;
+}
+
+.inventory.label {
+  padding: 40px;
+}
+
+.inventory-slot {
+  text-align: left;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
