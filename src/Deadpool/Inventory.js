@@ -3,8 +3,8 @@ import InventoryState from './InventoryState';
 function Inventory () {
     const state = InventoryState();
 
-    function update (value, index) {
-        state.set(index, value.target.value);
+    function update (event, index) {
+        state.set(index, event.target.value);
     }
 
     function remove(index) {
