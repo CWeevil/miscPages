@@ -1,11 +1,15 @@
 import AttributeBar from './AttributeBar';
 import Inventory from './Inventory';
+import Qualities from './Qualities';
 
 function DeadpoolSheet () {
     return (
         <div className="full-sheet">
-            <AttributeBar />
-            <Inventory />
+            <div className="single-line">
+                <AttributeBar />
+                <Inventory />
+            </div>
+            <Qualities />
         </div>
     );
 }

@@ -18,7 +18,7 @@ function Inventory () {
                 {state.getAll().map((item, index) => (
                     <li className="inventory-slot">
                         <input type="text" value={state.get(index)} onChange={event => update(event, index)} />
-                        <button onClick={() => remove(index)}>x</button>
+                        <button className="reject-button" onClick={() => remove(index)}>x</button>
                     </li>
                 ))}
             </ul>

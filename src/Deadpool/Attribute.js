@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Adjuster from './Adjuster.js';
 
 function Attribute (name) {
     const [value, setValue] = useState(3);
@@ -15,10 +16,7 @@ function Attribute (name) {
         <div className="record-box">
             <label className="label">{name.name}</label>
             <label className="static-value">{value}</label>
-            <div className="adjuster">
-                <button onClick={increment}>+</button>
-                <button onClick={decrement}>-</button>
-            </div>
+            <Adjuster incrementer={increment} decrementer={decrement} />
         </div>
     )
 }

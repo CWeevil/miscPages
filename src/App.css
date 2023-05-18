@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.full-sheet {
+.single-line {
   display: flex;
 }
 
@@ -57,6 +57,9 @@
 
 .label {
   font-weight: bold;
+}
+
+record-box.label {
   padding: 4px;
 }
 
@@ -75,13 +78,28 @@
 
 .inventory-slot {
   text-align: left;
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qualities-bar {
+  width: 40%;
+  text-align: left;
+}
+
+.quality-slot {
+  text-align: left;
+  list-style-type: none;
+}
+
+.add-to-list {
+  width: 100%;
+  border: none;
+}
+
+.accept-button {
+  background-color: green;
+}
+
+.reject-button {
+  background-color: red;
 }
