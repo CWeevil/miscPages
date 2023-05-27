@@ -103,3 +103,7 @@ record-box.label {
 .reject-button {
   background-color: red;
 }
+
+.number-input {
+   width: 10%;
+}

@@ -19,14 +19,14 @@ function Qualities () {
     }
 
     function createQuality () {
-        const updated = [...newQualities, {id: newQualities.length+1, name: '', value: 0}];
+        const updated = [...newQualities, {id: newQualities.length+1, name: '', value: 1}];
         setNew(updated);
     }
 
-    function update(event, index) {
+    function update(event, index, field) {
         const updated = [...newQualities];
         const qual = updated[index];
-        qual.name = event.target.value;
+        qual[field] = event.target.value;
         setNew(updated);
     }
 
@@ -58,7 +58,8 @@ function Qualities () {
             {newQualities.map((qual, index) => (
                 <ul>
                     <li className="quality-slot">
-                        <input type="text" value={qual.name} onChange={event => update(event, index)} />
+                        <input type="text" value={qual.name} onChange={event => update(event, index, 'name')} />:
+                        <input className="number-input" type="number" value={qual.value} onChange={event => update(event, index, 'value')} />
                         <button className="accept-button" onClick={() => accept(index)}>✔</button>
                         <button className="reject-button" onClick={() => remove(index)}>x</button>
                     </li>
